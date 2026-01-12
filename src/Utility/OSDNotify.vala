@@ -65,7 +65,7 @@ public class OSDNotify : GLib.Object {
 
 			if (is_supported()){
 
-				string desktop_entry = "timeshift-gtk";
+				string desktop_entry = "timeshift";
 				string hint = "string:desktop-entry:%s".printf(desktop_entry);
 
 				string s = "notify-send -t %d -u %s -i %s \"%s\" \"%s\" -h %s".printf(
